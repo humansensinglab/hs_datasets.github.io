@@ -17,10 +17,9 @@
 
 .box_description_envelope {
     padding: 3rem 1.5rem;
-    background-color: #f5f5f5;
-    /* border: 2px solid black; */
 }
 .box_description {
     text-align: center;
     border: 2px solid black;
+    height: 200px;
 }
