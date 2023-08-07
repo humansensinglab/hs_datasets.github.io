@@ -7,9 +7,10 @@
 .title_webpage.is-1 {
     font-size: 3rem;
     font-family: 'Google Sans', sans-serif;
-    text-align: center!important;
+    text-align: center;
 }
 
 .box_description {
-    text-align: center!important;
+    text-align: center;
+    border: 2px solid black;
 }
