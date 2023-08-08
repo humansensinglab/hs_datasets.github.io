@@ -187,9 +187,9 @@ body {
   border-radius: 5px;
 }
 
-.bottom_buttons[disabled] {
+/* .bottom_buttons[disabled] {
   opacity: .4;
-}
+} */
 
 .brmod {
   display: block;
@@ -199,7 +199,7 @@ body {
 .parent {
   margin: 1rem;
   text-align: center;
-  background-color:#fff
+  background-color:#a9a9a9
 }
 
 
