@@ -108,6 +108,7 @@ body {
 
 .block-years{
   letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 .block-years h2 {
   display: block !important;
