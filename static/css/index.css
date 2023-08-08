@@ -123,13 +123,12 @@ body {
   margin-bottom: 0px !important;
 }
 .row {
-  display: flex;
   margin-top: 5px;
   margin-bottom: 5px;
-  /* float:right; */
   height: 120px;
 }
-.part-text{
+.row .part-text{
+  width: 80%;
   float: right;
 
 }
