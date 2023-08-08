@@ -1,3 +1,9 @@
+/* Title */
+.body {
+    font-family: 'Google Sans', sans-serif;
+    background-color: green;
+}
+
 .box_title{
     padding: 3rem 1.5rem;
 }
@@ -26,10 +32,10 @@
     height: 200px;
 }
 
+/* Body */
 
 .box_main{
     /* font-size: 3rem; */
-    font-family: 'Google Sans', sans-serif;
     text-align: center;
     padding: 3rem 1.5rem;
 }
