@@ -115,19 +115,19 @@ body {
   letter-spacing: 1px;
 }
 .block-years h2 {
-  width: 800px;
-  display: block;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  color: black;
-  font-style: italic;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-bottom: solid;
-  border-color: #000;
-  border-width: 4px;
-  margin-bottom: 0px;
+  width: 800px !important; 
+  display: block !important;
+  text-align: center !important;
+  font-size: 16px !important;
+  font-weight: bold !important; 
+  color: black !important;
+  font-style: italic !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  border-bottom: solid !important;
+  border-color: #000 !important;
+  border-width: 4px !important;
+  margin-bottom: 0px !important;
 }
 /* .publication-body img {
 } */
