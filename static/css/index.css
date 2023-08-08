@@ -49,3 +49,22 @@
     display: flex;
     margin-bottom: 20px;
   }
+
+
+
+
+.footer{
+    background-color: #fafafa;
+    padding: 3rem 1.5rem 6rem;
+}
+.container_footer{
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+.has-text-centered {
+    text-align: center!important;
+}
+.large-font{
+    font-size: 25px;
+}
