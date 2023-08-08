@@ -1,54 +1,511 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="./static/css/index.css">
-      <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-      <!-- <title> Project: Travel webpage</title> -->
-    <body class = "body">
-      <section>
-        <div class="box_title">
-          <div class="box_title_1">
-          <h1 class="title_webpage is-1"> Datasets Human Sensing Laboratory </h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Controllable 3D Generative Adversarial Face Model via Disentangling Shape and Appearance">
+  <meta name="keywords" content="GAN, Face Synthesis, Mesh">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towards Realistic Generative 3D Face Models</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <link rel="shortcut icon" href="./assets/block.png">
+
+
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Towards Realistic Generative 3D Face Models</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              
+              <a href="https://aashishrai3799.github.io/">Aashish Rai</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://hireshgupta1997.github.io/">Hiresh Gupta</a><sup>*1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#">Ayush Pandey</a><sup>*1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#">Francisco Vicente Carrasco</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <br>
+              <a href="#">Shingo Jason Takagi</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#">Amaury Aubel</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#">Daeil Kim</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://aayushp.github.io/">Aayush Prakash</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.cs.cmu.edu/~ftorre/">Fernando de la Torre</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              
+              <br><sup>1</sup>Carnegie Mellon University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Facebook/Meta <br>
+              <br>
           </div>
 
-          <div class="box_description_envelope">
-            <h2 class="box_description"> Box description </h2>
-          </div>
+<!--           <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Facebook AI Research,</span>
+            <span class="author-block"><sup>2</sup>Carnegie Mellon University</span>
+          </div> -->
 
-        </div>
-      </section>
-      <section>
-        <div class="box_main">
-          <div class="container">
-            <div class="row">
-              First dataset
-            </div>
-            <div class="row">
-              Second dataset
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="./assets/in_review.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2304.12483.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/13vpw5ayFuIH-7QF4RyiWoWNh6GugKNda/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/aashishrai3799/Towards-Realistic-Generative-3D-Face-Models/" 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
             </div>
           </div>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="container">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/000341.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/300.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/000905.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/30.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/000021.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/000415.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/000961.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/62.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/101.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/000803.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop height="100%">
+            <source src="./assets/videos/000355.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In recent years, there has been significant progress in 2D generative face models fueled by applications such as animation, synthetic data generation, and digital avatars. However, due to the absence of 3D information, these 2D models often struggle to accurately disentangle facial attributes like pose, expression, and illumination, limiting their editing capabilities. To address this limitation, this paper proposes a 3D controllable generative face model to produce high-quality albedo and precise 3D shape leveraging existing 2D generative models. By combining 2D face generative models with semantic face manipulation, this method enables editing of detailed 3D rendered faces. The proposed framework utilizes an alternating descent optimization approach over shape and albedo. Differentiable rendering is used to train high-quality shapes and albedo without 3D supervision. <br>
+            
+Moreover, this approach outperforms the state-of-the-art (SOTA) methods in the well-known NoW benchmark for shape reconstruction. It also outperforms the SOTA reconstruction models in recovering rendered faces' identities across novel poses by an average of 10%. Additionally, the paper demonstrates direct control of expressions in 3D faces by exploiting latent space leading to text-based editing of 3D faces.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Abstract. -->
+
+
+  <!-- Paper video. -->
+<!--  <br/>
+  <br/>
+  <div id="method_video" class="columns is-centered has-text-centered">
+    <div class="column is-two-thirds">
+      <h2 class="title is-2">Video</h2>
+      <div class="publication-video">
+<!--         <video controls>
+          <source src="./resources/spotlight.mp4"
+                  type="video/mp4">
+        </video> --> 
+<!--        <iframe src="https://www.youtube.com/embed/jNdtjF1VXU4?rel=0&showinfo=0&hd=1&vq=hd1080"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!--/ Paper video. -->
+  
+</section>
+
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="columns is-centered">
+      <div class="column is-8"> 
+      <center> <img style="width: 100%;" src="./assets/images/figure_1.png"> </center>
+<!--        <video id="teaser" autoplay muted loop height="100%">
+          <source src="./videos/3dv_2022_107.mp4"
+                  type="video/mp4">
+        </video> -->
+        <p align="justify">
+          3D generative face model, novel views, and expression synthesis. a) High-resolution 3D shape and albedo recovered
+from a SytleGAN2 generated image. Novel views can be rendered using the estimated face model b) Editing of 3D faces
+with text. This method allows for expression manipulation through modification of the latent code using CLIP model. 
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2">Architecture</h2>
+        <div class="content has-text-justified">
+          <p>
+            Overview of our 3D generative model. The first step includes training an SAE, which projects shapes into two low dimensional
+embedding subspaces, one of which is dedicated to the identity factor while the other to the expression factor. In the second step, we utilize a
+cGAN network to sample shape and texture from their respective domains. A renderer is then used to generate photorealistic faces.
+          </p>
+          <center> <img  style="border: 2px solid #bbb; border-radius: 10px;" src="./assets/images/architecture_final_xx1.jpg"  width="1024"  height="800" /> </center>
+        </div>
+        <br/> -->
+        
+        
+        
+                <h2 class="title is-4">Illumination Control and Relighting</h2>
+        <div class="content has-text-justified">
+          <p>
+            We can control the direction of light using SH parameters.
+          </p>
+        </div>
+        <div class="is-vcentered interpolation-panel">
+            <!-- <center> <img style="width: 80%;" src="./assets/images/supp_illum.png"> </center> -->
+            
+            <div class="is-vcentered interpolation-panel">
           <div class="content has-text-centered">
-            <div>
-              <img style="float:left" typeof="foaf:Image" src="./assets/imgs/logo.png" width="65" height="60" alt="">
-              <a style="float:right" href="https://github.com/humansensinglab/kitchen_dataset.github.io/" class="large-font bottom_buttons">
-                <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
-              </a>
-            </div>
-            <!-- <a href="https://github.com/humansensinglab/kitchen_dataset.github.io/" class="large-font"></a> -->
-
-            <p>
-              <strong>
-                Copyright © 2023 Carnegie Mellon University
-              </strong>
-            </p>
+            <video style="border: 2px solid #bbb; border-radius: 10px; width: 75%;" autoplay muted loop>
+              <source src="./assets/videos/illum_dirn.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="content has-text-centered">
+            
+          <div class="content has-text-centered">
           </div>
         </div>
-      </footer>
-      
-    </body>
-      
+        
+        
+        
+        
+        <div class="content has-text-justified">
+   
+        </div>
+        <div class="is-vcentered interpolation-panel">
+            <!-- <center> <img style="width: 80%;" src="./assets/images/supp_illum.png"> </center> -->
+            
+            <div class="is-vcentered interpolation-panel">
+          <div class="content has-text-centered">
+            <video style="border: 2px solid #bbb; border-radius: 10px; width: 75%;" autoplay muted loop>
+              <source src="./assets/videos/illum_env.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+          </div>
+        </div>
+
+    </div>
+    </section>
+        
+        
+        
+        
+        
+        
+        
+        <section class="section">
+        <div class="container">
+        
+
+        <!-- Interpolating. -->
+        <h2 class="title is-4">3D Face Reconstruction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Randomly generated coarse mesh, detailed mesh and rendered faces from our model, corresponding to input 2D face.
+          </p>
+        </div>
+        <div class="is-vcentered interpolation-panel">
+          <div class="content has-text-centered">
+            <!-- <video style="border: 2px solid #bbb; border-radius: 10px; width: 80%;" autoplay muted loop>
+              <source src="./assets/videos/extrapolation_smile_combined.mp4"
+                      type="video/mp4">
+            </video> -->
+            <center> <img style="width: 60%;" src="./assets/images/supp_images.jpg"> </center>
+          </div>
+          <div class="content has-text-centered">
+
+          </div>
+        </div>
+        <br/>
+        <br/>
+
+      </div>
+    </section>
+
+
+
+
+    
+    <section class="section">
+      <div class="container">
+
+        <h2 class="title is-4">Performance on 3D Face Reconstruction Benchmarks</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>1.</b> <a href="https://now.is.tue.mpg.de/nonmetricalevaluation.html"><b>NoW Benchmark</b></a>: We are ranked on <b>2nd</b> position on NoW Benchmark Challenge.
+          </p>
+        </div>
+        <div class="is-vcentered interpolation-panel">
+          <div class="content has-text-centered">
+            <center> <img style="width: 50%;" src="./assets/images/now.png"> </center>
+          </div>
+          <div class="content has-text-centered">
+
+          </div>
+        </div>
+
+        <div class="content has-text-justified">
+          <p><br>
+            <b>2.</b> <a href="https://realy3dface.com/"><b>REALY 3D Benchmark</b></a>: We are ranked on <b>3rd</b> position on REALY front and side face reconstruction challenge.
+          </p>
+        </div>
+        <div class="is-vcentered interpolation-panel">
+          <div class="content has-text-centered">
+            <center> <img style="width: 80%;" src="./assets/images/realy_front.png"> </center>
+            <br>
+            <center> <img style="width: 80%;" src="./assets/images/realy_side.png"> </center>
+          </div>
+          <div class="content has-text-centered">
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+        <br/>
+        <br/>
+        
+
+
+
+
+
+        
+        
+
+
+
+
+        <!--/ Interpolating. -->
+
+        <!-- Re-rendering. -->
+<!--        <h3 class="title is-4">Failure cases</h3>
+        <div class="content has-text-justified">
+          <p>
+            Sometimes artifacts occur when the depth is discontinuous around the object boundary. For instance, the boundary of the flower or the tree is blurry. We hope to address these issues in future work by segmenting the Worldsheet around depth boundaries.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video style="border: 1px solid #bbb; border-radius: 10px;"
+                 controls
+                 muted
+                 width="35%">
+            <source src="./resources/compressed_no_mesh_scenery11_pad.mp4"
+                    type="video/mp4">
+          </video>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <video style="border: 1px solid #bbb; border-radius: 10px;"
+                 controls
+                 muted
+                 width="35%">
+            <source src="./resources/compressed_no_mesh_paris_pad.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ Animation. -->  
+     
+
+   
+  </div>
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="titile">BibTeX</h2>
+    <pre><code>
+  Coming soon...
+</code></pre>
+  </div>
+</section> -->
+
+
+
+<section class="section" id="LICENSE">
+  <div class="container content">
+    <h2 class="titile">License</h2>
+    <pre><code>
+    <!-- The code is available under X11 License. Please read the license terms available at <a href="https://github.com/aashishrai3799/3DFaceCAM/blob/main/LICENSE/">[Link]</a>. Quick summary available at <a href="https://www.tldrlegal.com/l/x11">[Link]</a>. -->
+    License information coming soon...
+</code></pre>
+  </div>
+</section>
+
+
+<section class="section" id="LICENSE">
+  <div class="container content">
+    <h2 class="titile">BibTex</h2>
+    <pre><code>
+    <!-- The code is available under X11 License. Please read the license terms available at <a href="https://github.com/aashishrai3799/3DFaceCAM/blob/main/LICENSE/">[Link]</a>. Quick summary available at <a href="https://www.tldrlegal.com/l/x11">[Link]</a>. -->
+    @article{rai2023towards,
+  		title={Towards Realistic Generative 3D Face Models},
+  		author={Rai, Aashish and Gupta, Hiresh and Pandey, Ayush and Carrasco, Francisco Vicente and Takagi, Shingo Jason and Aubel, Amaury and Kim, Daeil and Prakash, Aayush and De la Torre, Fernando},
+  		journal={arXiv preprint arXiv:2304.12483},
+  		year={2023}
+ 		}
+
+
+</code></pre>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <!-- <a href="https://arxiv.org/pdf/2208.14263.pdf" class="large-font bottom_buttons">
+        <i class="fas fa-file-pdf"></i>
+      </a> -->
+      <a href="https://github.com/aashishrai3799/3DFaceCAM/" class="large-font bottom_buttons">
+        <i class="fab fa-github"></i>
+      </a>
+      <br />
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a>.</p>
+      <p>Copyright © 2023 Carnegie Mellon University</p>
+<!--      <p><a href="https://opensource.facebook.com/legal/terms">Terms of Use</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://opensource.facebook.com/legal/privacy">Privacy Policy</a></p> -->
+    </div>
+  </div>
+</footer>
+  
+  <center>
+  <a href="https://clustrmaps.com/site/1bue3"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=BJk6zAo8z95QEZRXtzEN5tjS6XXE_gq9CAe3yMNQhKE&cl=ffffff" /></a>
+</center>
+  
+</body>
+</html>
