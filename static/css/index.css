@@ -134,14 +134,14 @@ body {
   width: 175px;
   height: 143px;
   float: left;
-  position:absolute;
-  display: block;
+  /* position:absolute; */
+  /* display: block; */
   padding-bottom: 5px;
 }
 .row .part-text{
   display:block;
   float:left;
-  margin-left: 200px;
+  margin-left: 30px;
 }
 
 .title-row{
