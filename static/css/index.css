@@ -133,8 +133,10 @@ body {
   float: right;
 
 }
-.row .title{
+.title-row{
   float: left;
+  font-size: 25px;
+
 }
 
 .row .part-img{
