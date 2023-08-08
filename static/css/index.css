@@ -125,9 +125,14 @@ body {
 .row {
   display: flex;
   margin-bottom: 20px;
-  float:right;
+  /* float:right; */
+  height: 120px;
 }
 
+.part-img{
+  float: left;
+  position:absolute;
+}
 /* .publication-body img {
 } */
 
