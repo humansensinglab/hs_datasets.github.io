@@ -139,6 +139,8 @@ body {
 }
 .row .part-text{
   display:block;
+  float:left;
+  margin-left: 200px;
 }
 
 .title-row{
