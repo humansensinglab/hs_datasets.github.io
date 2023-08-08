@@ -25,3 +25,22 @@
     border: 2px solid black;
     height: 200px;
 }
+
+
+.box_main{
+    /* font-size: 3rem; */
+    font-family: 'Google Sans', sans-serif;
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.row {
+    display: flex;
+    margin-bottom: 20px;
+  }
