@@ -138,12 +138,9 @@ body {
   padding-bottom: 5px;
 }
 .row .part-text{
-  /* width: 80%; */
-  /* float: left; */
   display:block;
-  /* margin-top: 20px; */
-  /* margin-left: 7px; */
 }
+
 .title-row{
   float: left;
   font-size: 15px;
@@ -216,9 +213,7 @@ body {
 .parent {
   margin: 1rem;
   text-align: center;
-  /* background-color:#dcdcdc */
 }
-
 
 .child {
   display: inline-block;
