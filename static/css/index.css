@@ -31,8 +31,17 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
-
-.publication-title {
+.web-icon {
+  font-family: 'Academicons';
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  background-image: url(./assets/images/favicon.ico);
 }
 
 .publication-banner {
@@ -179,18 +188,6 @@ body {
   text-align: center;
 }
 
-.web-icon {
-  font-family: 'Academicons';
-  font-weight: 400;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  background-image: url(./assets/images/favicon.ico);
-}
 
 .child {
   display: inline-block;
