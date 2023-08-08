@@ -48,12 +48,6 @@ body {
   background-image: url(./assets/images/favicon.ico);
 } */
 
-
-.row {
-  display: flex;
-  margin-bottom: 20px;
-}
-
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
 }
@@ -121,13 +115,19 @@ body {
   /* font-weight: bold !important;  */
   color: black !important;
   /* font-style: italic !important; */
-  padding-top: 5px !important;
+  padding-top: 10px !important;
   padding-bottom: 5px !important;
   border-bottom: solid !important;
   border-color: #000 !important;
-  border-width: 4px !important;
+  border-width: 3px !important;
   margin-bottom: 0px !important;
 }
+.row {
+  display: flex;
+  margin-bottom: 20px;
+  float:right;
+}
+
 /* .publication-body img {
 } */
 
