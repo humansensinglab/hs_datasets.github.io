@@ -1,5 +1,6 @@
 body {
   font-family: 'Google Sans', sans-serif;
+
 }
 
 
@@ -48,9 +49,9 @@ body {
   background-image: url(./assets/images/favicon.ico);
 } */
 
-.publication-authors {
+/* .publication-authors {
     font-family: 'Google Sans', sans-serif;
-}
+} */
 
 /* .publication-venue {
     color: #555;
@@ -126,12 +127,14 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
   height: 120px;
+  width: 900px;
   border-bottom: #C00 dashed 1px;
 }
 .row .part-text{
-  width: 80%;
-  float: right;
-
+  /* width: 80%; */
+  float: left;
+  display:block;
+  margin-left: 7px;
 }
 .title-row{
   float: left;
@@ -144,6 +147,7 @@ body {
   height: 120px;
   float: left;
   position:absolute;
+  display: block;
 }
 /* .publication-body img {
 } */
@@ -202,10 +206,10 @@ body {
   opacity: .4;
 } */
 
-.brmod {
+/* .brmod {
   display: block;
   margin-bottom: 0.5em;
-}
+} */
 
 .parent {
   margin: 1rem;
