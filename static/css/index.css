@@ -134,6 +134,7 @@ body {
   height: 143px;
   float: left;
   padding-bottom: 5px;
+  overflow: hidden;
 }
 .row .part-text{
   display:block;
@@ -144,7 +145,6 @@ body {
 .title-row{
   float: left;
   font-size: 15px;
-
 }
 
 
