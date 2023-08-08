@@ -1,7 +1,9 @@
 .box_title{
     padding: 3rem 1.5rem;
 }
-
+.box_title_1{
+    padding-top: 0;
+}
 
 .title_webpage {
     color: #363636;
