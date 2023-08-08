@@ -1,7 +1,6 @@
 /* Title */
 .body {
     font-family: 'Google Sans', sans-serif;
-    background-color: green;
 }
 
 .box_title{
@@ -24,7 +23,7 @@
 }
 
 .box_description_envelope {
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem;
 }
 .box_description {
     text-align: center;
@@ -35,9 +34,9 @@
 /* Body */
 
 .box_main{
-    /* font-size: 3rem; */
+    font-size: 1rem;
     text-align: center;
-    padding: 3rem 1.5rem;
+    padding: 3rem 3rem;
 }
 .container{
     max-width: 800px;
