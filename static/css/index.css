@@ -124,7 +124,8 @@ body {
 }
 .row {
   display: flex;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   /* float:right; */
   height: 120px;
 }
@@ -198,6 +199,7 @@ body {
 .parent {
   margin: 1rem;
   text-align: center;
+  background-color:#fff
 }
 
 
