@@ -31,6 +31,9 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.publication-title {
+  font-family: 'Google Sans', sans-serif;
+}
 .web-icon {
   font-family: 'Academicons';
   font-weight: 400;
@@ -41,7 +44,7 @@ body {
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-  background-image: url(./assets/images/favicon.ico);
+  /* background-image: url(./assets/images/favicon.ico); */
 }
 
 .publication-banner {
