@@ -4,13 +4,10 @@ body {
 }
 
 .name-and-slogan{
-  background-image: url(../../assets/images/big_logo.png);
-  width: 800px;
-  height: 450px;
-  color: rgba(0,0,0,0);
   display: block;
   margin: auto;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 
