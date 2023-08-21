@@ -3,7 +3,7 @@ body {
 
 }
 
-#name-and-slogan{
+.name-and-slogan{
   background-image: url(img/logo.png);
   width: 200px;
   height: 90px;
