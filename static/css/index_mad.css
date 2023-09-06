@@ -1,9 +1,19 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-family: Helvetica, Arial, Tahoma, sans-serif;
+}
 body {
     font: 12px/1.7 Helvetica, Arial, Tahoma, sans-serif;
     color: #666666;
     -webkit-font-smoothing: antialiased;
 }
-
+.header_bg {
+    min-height: 50px;
+    background: #FFFFFF;
+}
 .container {
     width: 940px;
     margin: 0 auto;
