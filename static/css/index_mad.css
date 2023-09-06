@@ -60,7 +60,16 @@ body {
     line-height: 0;
 }
 
-
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+}
 ::selection {
     background: #2e2823;
     color: #FFFFFF;
