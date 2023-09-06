@@ -5,11 +5,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	outline:0;
 	font-family: Helvetica, Arial, Tahoma, sans-serif;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-weight: bold;
+}
+dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, blockquote, article, p {
+    margin-bottom: 20px;
+}
 body {
     font: 12px/1.7 Helvetica, Arial, Tahoma, sans-serif;
     color: #666666;
     -webkit-font-smoothing: antialiased;
 }
+
+
 .header_bg {
     min-height: 50px;
     background: #FFFFFF;
@@ -68,7 +79,14 @@ h2 {
     font-size: 22px;
     color: #453C34;
 }
-
+.col_1_3 {
+    width: 300px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+strong, b {
+    font-weight: bold;
+}
 .clearfix:after {
     clear: both;
     content: ' ';
