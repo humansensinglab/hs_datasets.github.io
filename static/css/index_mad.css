@@ -1,3 +1,18 @@
+body {
+    font: 12px/1.7 Helvetica, Arial, Tahoma, sans-serif;
+    color: #666666;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.header_bg .logo {
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
 .main-menu{
     margin: 60px 0 0 0;
     float: right;
