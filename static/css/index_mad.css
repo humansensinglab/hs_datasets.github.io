@@ -54,7 +54,11 @@ body {
     text-decoration: none;
 }
 
-
+.padding3 {
+    padding-top: 43px;
+    font-size: 0;
+    line-height: 0;
+}
 
 
 ::selection {
