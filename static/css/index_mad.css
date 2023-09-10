@@ -90,8 +90,17 @@ strong, b {
 .marginLeft20 {
     margin-left: 20px;
 }
-
-
+a {
+    color: #b70303;
+    color: #74665b;
+    font-weight: bold;
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+}
+a:link, a:visited, a:hover, a:active, a:focus {
+    text-decoration: none;
+    outline: none;
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+}
 
 
 .clearfix:after {
