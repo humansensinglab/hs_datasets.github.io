@@ -102,7 +102,6 @@ a:link, a:visited, a:hover, a:active, a:focus {
     font-family: Helvetica, Arial, Tahoma, sans-serif;
 }
 
-
 .clearfix:after {
     clear: both;
     content: ' ';
@@ -116,4 +115,13 @@ a:link, a:visited, a:hover, a:active, a:focus {
 ::selection {
     background: #2e2823;
     color: #FFFFFF;
+}
+
+
+
+/* Download page: */
+.col_1_3 {
+    width: 300px;
+    float: left;
+    margin: 0 20px 0 0;
 }
