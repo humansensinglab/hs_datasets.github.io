@@ -125,3 +125,6 @@ a:link, a:visited, a:hover, a:active, a:focus {
     float: left;
     margin: 0 20px 0 0;
 }
+.col_1_2.last, .col_2_3.last, .col_1_3.last, .col_1_4.last, .col_1_5.last, .col_2_5.last, .col_3_4.last, .col_3_4 .col_1_2.last {
+    margin: 0;
+}
