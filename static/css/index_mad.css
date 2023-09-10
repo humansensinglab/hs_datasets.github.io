@@ -87,6 +87,13 @@ h2 {
 strong, b {
     font-weight: bold;
 }
+.marginLeft20 {
+    margin-left: 20px;
+}
+
+
+
+
 .clearfix:after {
     clear: both;
     content: ' ';

@@ -1,0 +1,36 @@
+1:Running
+2:Crouching
+3:Jumping 
+4:Walking
+5:Jump and Side-Kick
+6:Left Arm Swipe to the Left
+7:Left Arm Swipe to the Right
+8:Left Arm Wave
+9:Left Arm Punch
+10:Left Arm Dribble
+11:Left Arm Pointing to the Ceiling
+12:Left Arm Throw
+13:Swing from Left (baseball swing)
+14:Left Arm Receive
+15:Left Arm Back Receive
+16:Left Leg Kick to the Front
+17:Left Leg Kick to the Left
+18:Right Arm Swipe to the Left
+19:Right Arm Swipe to the Right
+20:Right Arm Wave
+21:Right Arm Punch
+22:Right Arm Dribble
+23:Right Arm Pointing to the Ceiling
+24:Right Arm Throw
+25:Swing from Right (baseball swing)
+26:Right Arm Receive
+27:Right Arm Back Receive
+28:Right Leg Kick to the Front
+29:Right Leg Kick to the Right
+30:Cross Arms in the Chest
+31:Basketball Shooting
+32:Both Arms Pointing to the Screen
+33:Both Arms Pointing to Both Sides
+34:Both Arms Pointing to Right Side
+35:Both Arms Pointing to Left Side
+1000:Null Class
