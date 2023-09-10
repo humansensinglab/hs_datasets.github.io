@@ -120,6 +120,8 @@ a:link, a:visited, a:hover, a:active, a:focus {
     border-top: 1px solid #453c34;
     background: #ffffff;
     padding-top: 20px;
+    position: absolute;
+    width: 100%;
     bottom: 0px;
 }
 
