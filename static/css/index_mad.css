@@ -128,3 +128,35 @@ a:link, a:visited, a:hover, a:active, a:focus {
 .col_1_2.last, .col_2_3.last, .col_1_3.last, .col_1_4.last, .col_1_5.last, .col_2_5.last, .col_3_4.last, .col_3_4 .col_1_2.last {
     margin: 0;
 }
+
+
+
+/* FAQ page: */
+.clear {
+    /* clear: both; */
+    /* display: block; */
+    /* height: 0; */
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+.page_info {
+    margin: 10px 0 17px 0;
+}
+h1.bottom_line {
+    border-bottom: 1px solid #d9d9d9;
+    margin: 20px 0 30px 0;
+    padding: 0 0 10px 0;
+}
+
+h1.regular, h2.regular, h3.regular, h4.regular, h5.regular, h6.regular {
+    font-weight: 400;
+}
+h1 {
+    font-size: 25px;
+    color: #453C34;
+}
+
+.question {
+    color: #b70303;
+}
