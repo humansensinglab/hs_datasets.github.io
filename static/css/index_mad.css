@@ -116,8 +116,12 @@ a:link, a:visited, a:hover, a:active, a:focus {
     background: #2e2823;
     color: #FFFFFF;
 }
-
-
+.footer_bg_bottom {
+    border-top: 1px solid #453c34;
+    background: #ffffff;
+    padding-top: 20px;
+    bottom: 0px;
+}
 
 /* Download page: */
 .col_1_3 {
