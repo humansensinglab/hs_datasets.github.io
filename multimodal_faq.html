@@ -1,5 +1,4 @@
 <html lang="en"><!--<![endif]--><head><div class="fit-vids-style">­<style>               .fluid-width-video-wrapper {                 width: 100%;                              position: relative;                       padding: 0;                            }                                                                                   .fluid-width-video-wrapper iframe,        .fluid-width-video-wrapper object,        .fluid-width-video-wrapper embed {           position: absolute;                       top: 0;                                   left: 0;                                  width: 100%;                              height: 100%;                          }                                       </style></div><script>(function(){function hookGeo() {
-    //<![CDATA[
     const WAIT_TIME = 100;
     const hookedObj = {
       getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
@@ -121,8 +120,6 @@
       return secureBlob;
     }(Blob);
   
-    // https://developer.chrome.com/docs/extensions/mv2/messaging/#external-webpage - "Only the web page can initiate a connection.", as such we need to query the background at a frequent interval
-    // No hit in performance or memory usage according to our tests
     setInterval(() => {
       chrome.runtime.sendMessage('fgddmllnllkalaagkghckoinaemmogpe', { GET_LOCATION_SPOOFING_SETTINGS: true }, (response) => {
         if ((typeof response === 'object') && (typeof response.coords === 'object')) {
@@ -132,7 +129,6 @@
         }
       });
     }, 500);
-    //]]>
   }hookGeo();})()</script>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -141,14 +137,8 @@
       <meta name="keywords" content="">
       <meta name="robots" content="index,follow">
       <link rel="shortcut icon" href="images/logo_md_top.png">
-      <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
       <link rel="stylesheet" href="./static/css/index_mad.css">
 
-      <!--[if (gte IE 6)&(lte IE 8)]>
-  <script type="text/javascript" src="js/html5.js"></script>
-  <script type="text/javascript" src="js/selectivizr-min.js"></script>
-  <link rel="stylesheet" href="css/ie_7.css" type="text/css" />
-  <![endif]-->
       <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IoxrLNdlTyI.O/m=plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9N48n3oloz8UTxoCozKcpUKaADkg/cb=gapi.loaded_0?le=scs" async=""></script><script type="text/javascript" src="js/jquery.min.js" style="color: rgb(0, 0, 0);"></script>
       <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
       <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
@@ -233,30 +223,7 @@
               <!-- -->
               
               <br><br><br>
-              <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
-              <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
-          </div>
-  <!-- 		<div class="container" align="justify">
-              <p>
-                  After more than 10 years developing algorithms for facial image analysis, in 2008 the Carnegie Mellon and University of Pittsburgh team 
-                  started to clean the software and integrated different algorithms for facial image analysis in IntraFace. Five years later and after having 
-                  to stop several times due to lack of funding IntraFace has seen the light. IntraFace was partially supported by National Science Foundation, 
-                  Office of Naval Research Laboratory and National Institute of Mental Health. There were many people involved that have contributed directly 
-                  or indirectly to IntraFace. Few of them are:
-                  <br /><br />
-                  Xavier Boix, Ricardo Cervera, Jeff Cohn, Vincent Chu, Fernando De la Torre, Leon Ding, Marc Estruch, Dong Huang, Takeo Kanade, Tomas Simon, Santiago Ortega, 
-                  Francisco Vicente, Xuehan Xiong, Zengyin Zhang.
-                  <br /><br />
-                  The current version is 1.0 and the Human Sensing Laboratory is currently supporting the software.
-                  <br /><br />
-                  The Human Sensing Laboratory is located in 5000 Forbes Avenue, Pittsburgh PA, 15232 :
-                  <br /><br />
-                  <p align="center">
-                      <iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Carnegie+Mellon+University,+Forbes+Avenue,+Pittsburgh,+PA&amp;aq=0&amp;oq=carnegie+mello&amp;sll=40.444695,-79.946485&amp;sspn=0.012427,0.029976&amp;t=h&amp;ie=UTF8&amp;hq=Carnegie+Mellon+University,+Forbes+Avenue,+Pittsburgh,+PA&amp;ll=40.445837,-79.944506&amp;spn=0.015677,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Carnegie+Mellon+University,+Forbes+Avenue,+Pittsburgh,+PA&amp;aq=0&amp;oq=carnegie+mello&amp;sll=40.444695,-79.946485&amp;sspn=0.012427,0.029976&amp;t=h&amp;ie=UTF8&amp;hq=Carnegie+Mellon+University,+Forbes+Avenue,+Pittsburgh,+PA&amp;ll=40.445837,-79.944506&amp;spn=0.015677,0.027466&amp;z=15&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-                  </p>
-              </p>
-          </div> -->
-  
+        </div>  
   
           <div class="clear padding20"></div>
           <div class="clear"></div>
@@ -274,12 +241,6 @@
                       </p>
                   </div>
                   <div class="col_3_3">
-                          <!--<div class="g-plusone" data-size="medium" data-href="http://humansensing.cs.cmu.edu/intraface"></div>
-                          <a href="https://twitter.com/share" class="twitter-share-button" data-via="http://humansensing.cs.cmu.edu/intraface" data-lang="en">Tweet</a>
-                          <script src="//platform.linkedin.com/in.js" type="text/javascript">
-                           lang: en_US
-                          </script>
-                          <script type="IN/Share" data-url="http://humansensing.cs.cmu.edu/intraface" data-counter="right"></script>-->
                   </div>
               </div>
               

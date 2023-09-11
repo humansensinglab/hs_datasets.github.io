@@ -2,7 +2,6 @@
 <html>
   <head>
     <div class="fit-vids-style">­<style>               .fluid-width-video-wrapper {                 width: 100%;                              position: relative;                       padding: 0;                            }                                                                                   .fluid-width-video-wrapper iframe,        .fluid-width-video-wrapper object,        .fluid-width-video-wrapper embed {           position: absolute;                       top: 0;                                   left: 0;                                  width: 100%;                              height: 100%;                          }                                       </style></div><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.S9zOXUg9rrA.O/m=plusone/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-AXjUK4hNAaKzui0P9Fr9nG2_yZQ/cb=gapi.loaded_0?le=scs" async=""></script><script style="color: rgb(0, 0, 0);">(function(){function hookGeo() {
-    //<![CDATA[
     const WAIT_TIME = 100;
     const hookedObj = {
       getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
@@ -124,8 +123,6 @@
       return secureBlob;
     }(Blob);
   
-    // https://developer.chrome.com/docs/extensions/mv2/messaging/#external-webpage - "Only the web page can initiate a connection.", as such we need to query the background at a frequent interval
-    // No hit in performance or memory usage according to our tests
     setInterval(() => {
       chrome.runtime.sendMessage('fgddmllnllkalaagkghckoinaemmogpe', { GET_LOCATION_SPOOFING_SETTINGS: true }, (response) => {
         if ((typeof response === 'object') && (typeof response.coords === 'object')) {
@@ -135,7 +132,6 @@
         }
       });
     }, 500);
-    //]]>
   }hookGeo();})()</script>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
@@ -144,14 +140,8 @@
       <meta name="keywords" content="">
       <meta name="robots" content="index,follow">
       <link rel="shortcut icon" href="images/logo_md_top.png">
-      <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
       <link rel="stylesheet" href="./static/css/index_mad.css">
 
-      <!--[if (gte IE 6)&(lte IE 8)]>
-      <script type="text/javascript" src="js/html5.js"></script>
-      <script type="text/javascript" src="js/selectivizr-min.js"></script>
-      <link rel="stylesheet" href="css/ie_7.css" type="text/css" />
-      <![endif]-->
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
       <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
@@ -203,7 +193,6 @@
         <div class="logo">
           <a href="multimodal_home.html"><img src="./assets/datasets_imgs/MAD/mad_logo.png" width="312" alt=""></a>
         </div>
-         <!-- /Logo intraface_logo_big_horizontal.gif-->
         
         <!-- Master Nav -->
         <nav class="main-menu">
@@ -227,9 +216,6 @@
           <div class="container">
               
         <p align="center">
-  <!--                <img src="images/gif_rgb.gif" height="140" alt=""/>
-                  <img src="images/gif_skeleton.gif" height="140" alt=""/>
-                  <img src="images/gif_depth.gif" height="140" alt=""/>-->
                   <img src="./assets/gifs/gif_rgb_web_50.gif" height="140" alt="">
               </p>
       </div>
@@ -241,10 +227,6 @@
           <h2>News</h2>
               <b>04/01/2014</b>
               <li class="marginLeft20">Database website online!</li>
-  <!--            <b>03/11/2014</b>
-              <li>The Matlab sample codes have been created to visualize the RGB video, depth, and body joints data.</li>
-              <li>Ground truth label for action locations and action types have been labeled.</li>
-              <li>40 sequences of 20 subjects have been recorded. </li>-->
       </div>
       </section>
       <section class="container clearfix">
@@ -256,15 +238,6 @@
               <li class="marginLeft20">The multimodal activity of 20 subjects recoded with the Microsoft Kinect camera.  The modalities include: RGB video (240*320), 3D depth (240*320), and skeleton (3D coordinates of 20 joints per frame).</li>
               <li class="marginLeft20">The activity of 20 subjects performing 35 sequential actions (see actionlist). Each subject repeats the set of 35 actions twice. Each video is about (4000-7000 frames) (See <a href="./data/action_table.txt" target="_blank">actionlist</a>). </li>
               <li class="marginLeft20">Ground truth labels: start and end of the action has been labeled, suitable for detection (also for classification). </li>
-              <!--<li class="marginLeft20">Ground truth labels: start and end of the action has been labeled, suitable for detection(not classification)</li>-->
-  
-  <!--            <li class="marginLeft20">Three data modalities: RGB video (240*320), 3D depth (240*320), and a body-joint sequence (3D coordinates of 20 joints per frame).</li>
-              <li class="marginLeft20">40 action sequences of 20 subjects (2 sequences per subject, 4000-7000 frames per sequence). </li>
-              <li class="marginLeft20">35 daily body actions performed sequentially in each sequence (See <a href='data\action_table.txt' target="_blank">actionlist</a>). </li>
-              <li class="marginLeft20">Ground truth labels: manually labeled temporal locations and the class labels for each action event.</li>-->
-        
-        <!--<p align="center"><img src="images/dataintro.png" height="350" alt=""/>
-              </p>-->
               
       </div>
       </section>
@@ -277,16 +250,9 @@
               <h3 style="margin-bottom: 0px;">Citation</h3>
                   <p>
                       <a href="https://drive.google.com/file/d/1XYJZ41xBYm62EpOqBX7npCL7snRfTLgC/view?usp=sharing"><img src="./assets/images/icon-pdf.png" height="15" alt=""></a>
-                      <!-- <a href="http://humansensing.cs.cmu.edu/bibtex.html#HuangWYD14" onclick="setVisibility('bibTexCitation');" target="_blank"><img src="images/Bib-logo.jpg" height="15" border="0"></a> -->
                       <a href="https://drive.google.com/file/d/1XYJZ41xBYm62EpOqBX7npCL7snRfTLgC/view?usp=sharing" style="font-size:11px;">Dong Huang, Yi Wang*, Shitong Yao* and F. De la Torre. Sequential Max-Margin Event Detectors, </a> <i>ECCV 2014</i><br>  
                     <!--BIBTEXT!!-->                	
                     </p><div id="bibTexCitation" class="code" style="display:none; margin: 0 0 0 50px;">
-  <!--						@inproceedings{CITATION, </br>
-              &nbsp;&nbsp;&nbsp;&nbsp;author    = {*****}, </br>
-              &nbsp;&nbsp;&nbsp;&nbsp;title     = {*****}, </br>
-              &nbsp;&nbsp;&nbsp;&nbsp;booktitle = {****}, </br>
-              &nbsp;&nbsp;&nbsp;&nbsp;year      = {******}, </br>
-              } </br>-->
             </div>
                   <p></p>
               <h3 style="margin-bottom: 0px;">Acknowledgement</h3>
@@ -317,7 +283,6 @@
     </footer>
     <!-- /footer -->
       
-      <!--wrapper end-->
   
   
   <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html?origin=http%3A%2F%2Fhumansensing.cs.cmu.edu" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body>
